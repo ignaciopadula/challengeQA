@@ -1,0 +1,2 @@
+# challengeQA
+Prueba tecnica educabot
