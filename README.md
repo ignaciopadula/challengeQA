@@ -1,6 +1,9 @@
 # challengeQA
 Prueba tecnica para educabot
 
+## Documentación
+Dentro de la carpeta /docs/ existe una planilla con los test cases, separados por hojas, y un word con las respuestas a las consignas.
+
 ## Framework + librerias
 ```bash
     "cypress": "^14.5.3",
