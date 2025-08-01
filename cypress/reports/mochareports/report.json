@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-08-01T17:38:51.239Z",
-    "end": "2025-08-01T17:39:03.624Z",
-    "duration": 12385
+    "start": "2025-08-01T18:06:54.835Z",
+    "end": "2025-08-01T18:07:07.608Z",
+    "duration": 12773
   },
   "results": [
     {
-      "uuid": "79cf24a0-e15a-4d13-886d-c76fabbddb5b",
+      "uuid": "89a59dc2-de4f-4d44-ab96-dcb8cbc41bc7",
       "title": "",
       "fullFile": "cypress/e2e/api.cy.js",
       "file": "cypress/e2e/api.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "02a3eed2-8490-45e9-9327-604ddf827b25",
+          "uuid": "fe6b54a1-9359-4706-8a33-dfbe4407411a",
           "title": "GET Mercado Libre",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET departments",
               "fullTitle": "GET Mercado Libre GET departments",
               "timedOut": null,
-              "duration": 555,
+              "duration": 510,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('GET', 'https://www.mercadolibre.com.ar/menu/departments').then(response => {\n  expect(response.status).to.eq(200);\n  const responseString = JSON.stringify(response.body);\n  expect(responseString).to.include(\"departments\");\n});",
               "err": {},
-              "uuid": "ad87ef6a-8006-46fa-a1fc-a36720834809",
-              "parentUUID": "02a3eed2-8490-45e9-9327-604ddf827b25",
+              "uuid": "c5393c20-2b32-4d93-b3f2-cde31e43e0c6",
+              "parentUUID": "fe6b54a1-9359-4706-8a33-dfbe4407411a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ad87ef6a-8006-46fa-a1fc-a36720834809"
+            "c5393c20-2b32-4d93-b3f2-cde31e43e0c6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 555,
+          "duration": 510,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "495de1fa-151a-4ab7-a13c-93687896544f",
+      "uuid": "2a05ce67-a843-4a69-bc7d-35da848d5a30",
       "title": "",
       "fullFile": "cypress/e2e/login.cy.js",
       "file": "cypress/e2e/login.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "3cbca9bf-3911-4610-82d0-12a187dd890c",
+          "uuid": "71c5933e-a078-4fcc-89d7-f2ab67245ff3",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -96,7 +96,7 @@
               "title": "Login correcto",
               "fullTitle": "Login Login correcto",
               "timedOut": null,
-              "duration": 1588,
+              "duration": 1707,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -105,8 +105,8 @@
               "context": null,
               "code": "cy.visit('https://www.saucedemo.com');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('secret_sauce');\ncy.get('#login-button').click();\ncy.url().should('include', '/inventory.html');",
               "err": {},
-              "uuid": "237e480e-75ea-4da0-a8aa-dfbce48b52b9",
-              "parentUUID": "3cbca9bf-3911-4610-82d0-12a187dd890c",
+              "uuid": "43869a07-4178-498c-a9de-d15b5c318f4f",
+              "parentUUID": "71c5933e-a078-4fcc-89d7-f2ab67245ff3",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "Login erroneo",
               "fullTitle": "Login Login erroneo",
               "timedOut": null,
-              "duration": 968,
+              "duration": 954,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -123,8 +123,8 @@
               "context": null,
               "code": "cy.visit('https://www.saucedemo.com');\ncy.get('#user-name').type('standard_user');\ncy.get('#password').type('password');\ncy.get('#login-button').click();\ncy.get('[data-test=\"error\"]').should('be.visible');",
               "err": {},
-              "uuid": "c87a7f9a-42c0-4a7f-86d1-b349f7d0a76e",
-              "parentUUID": "3cbca9bf-3911-4610-82d0-12a187dd890c",
+              "uuid": "6dd595e5-691d-417b-a8de-e329afc82f43",
+              "parentUUID": "71c5933e-a078-4fcc-89d7-f2ab67245ff3",
               "isHook": false,
               "skipped": false
             },
@@ -132,7 +132,7 @@
               "title": "Login roto",
               "fullTitle": "Login Login roto",
               "timedOut": null,
-              "duration": 5009,
+              "duration": 5043,
               "state": "failed",
               "speed": null,
               "pass": false,
@@ -145,23 +145,23 @@
                 "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[data-test=\"test\"]`, but never found it.\n    at Context.eval (webpack://challengeqa/./cypress/e2e/login.cy.js:24:33)",
                 "diff": null
               },
-              "uuid": "19c8e721-2094-4fa8-ba20-b0b995e19a47",
-              "parentUUID": "3cbca9bf-3911-4610-82d0-12a187dd890c",
+              "uuid": "ca9031cb-a335-4f8d-b20e-6a0bb2cd8741",
+              "parentUUID": "71c5933e-a078-4fcc-89d7-f2ab67245ff3",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "237e480e-75ea-4da0-a8aa-dfbce48b52b9",
-            "c87a7f9a-42c0-4a7f-86d1-b349f7d0a76e"
+            "43869a07-4178-498c-a9de-d15b5c318f4f",
+            "6dd595e5-691d-417b-a8de-e329afc82f43"
           ],
           "failures": [
-            "19c8e721-2094-4fa8-ba20-b0b995e19a47"
+            "ca9031cb-a335-4f8d-b20e-6a0bb2cd8741"
           ],
           "pending": [],
           "skipped": [],
-          "duration": 7565,
+          "duration": 7704,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

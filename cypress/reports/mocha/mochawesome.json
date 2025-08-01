@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-08-01T17:38:51.239Z",
-    "end": "2025-08-01T17:38:51.884Z",
-    "duration": 645,
+    "start": "2025-08-01T18:06:54.835Z",
+    "end": "2025-08-01T18:06:55.409Z",
+    "duration": 574,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "79cf24a0-e15a-4d13-886d-c76fabbddb5b",
+      "uuid": "89a59dc2-de4f-4d44-ab96-dcb8cbc41bc7",
       "title": "",
       "fullFile": "cypress/e2e/api.cy.js",
       "file": "cypress/e2e/api.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "02a3eed2-8490-45e9-9327-604ddf827b25",
+          "uuid": "fe6b54a1-9359-4706-8a33-dfbe4407411a",
           "title": "GET Mercado Libre",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "GET departments",
               "fullTitle": "GET Mercado Libre GET departments",
               "timedOut": null,
-              "duration": 555,
+              "duration": 510,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.request('GET', 'https://www.mercadolibre.com.ar/menu/departments').then(response => {\n  expect(response.status).to.eq(200);\n  const responseString = JSON.stringify(response.body);\n  expect(responseString).to.include(\"departments\");\n});",
               "err": {},
-              "uuid": "ad87ef6a-8006-46fa-a1fc-a36720834809",
-              "parentUUID": "02a3eed2-8490-45e9-9327-604ddf827b25",
+              "uuid": "c5393c20-2b32-4d93-b3f2-cde31e43e0c6",
+              "parentUUID": "fe6b54a1-9359-4706-8a33-dfbe4407411a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "ad87ef6a-8006-46fa-a1fc-a36720834809"
+            "c5393c20-2b32-4d93-b3f2-cde31e43e0c6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 555,
+          "duration": 510,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
